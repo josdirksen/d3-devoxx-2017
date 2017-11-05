@@ -1,0 +1,13 @@
+.added {
+    fill: steelblue;
+}
+
+.updated {
+    fill: green;
+}
+
+ul li {
+    font-size: xx-large;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 300;
+}

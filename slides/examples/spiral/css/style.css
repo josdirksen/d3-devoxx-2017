@@ -1,0 +1,44 @@
+.spiral {
+    fill: none;
+}
+
+.updated {
+    fill: green;
+}
+
+.reference {
+    stroke: grey;
+    fill: none;
+    stroke-width: 2;
+}
+
+.background {
+    fill: black
+}
+
+path {
+    fill: none;
+    stroke-width: 0.5;
+    opacity: 1.5;
+}
+
+text.temps {
+    stroke: none;
+    fill: white;
+    font-size: xx-small;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+text.months {
+    font-size: small;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+text.currentYear {
+    fill: white;
+    font-size: large;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 300;
+}

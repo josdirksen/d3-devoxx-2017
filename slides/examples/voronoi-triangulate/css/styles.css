@@ -1,0 +1,21 @@
+body {
+    background: black;
+}
+
+.rotatable rect {
+    stroke: black;
+    fill: white;
+}
+
+.rotatable path {
+    stroke-width: 2;
+    stroke: black;
+}
+
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+span {
+    font-size: smaller;
+}

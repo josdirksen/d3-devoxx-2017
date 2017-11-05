@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <script src="../../libs/d3.v4.js"></script>
+    <script src="js/lines.js"></script>
+    <script src="js/StackBlur.js"></script>
+    <script src="js/sobel.js"></script>
+</head>
+<body>
+
+<!--<div id="imageHolder" style="position:absolute;left:20px; top:20px;text-align:center;font-size:10px;">-->
+<div id="imageHolder" style="display: inline-block">
+    <img id="srcimg" src="images/sample2.jpg"><br>
+</div>
+<div id="canvasHolder" style="display: inline-block">
+    <canvas id="canvas">
+    </canvas>
+</div>
+
+
+<div id="output">
+    <svg class="chart"></svg>
+</div>
+
+
+<script>
+    (function () {
+        show();
+    })();
+</script>
+
+</body>
+</html>

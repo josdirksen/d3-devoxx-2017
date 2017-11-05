@@ -1,0 +1,13 @@
+body {
+    background: black;
+}
+
+.rotatable rect {
+    stroke: black;
+    fill: white;
+}
+
+.rotatable path {
+    /*stroke-width: 2;*/
+    /*stroke: black;*/
+}

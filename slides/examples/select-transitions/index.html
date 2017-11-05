@@ -1,0 +1,30 @@
+<html>
+<head>
+    <!-- generic stuff -->
+    <script src="../../libs/d3.v4.js"></script>
+
+    <!-- specific stuff -->
+    <script src="./js/select.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+
+<div id="output">
+    <svg class="chart"></svg>
+</div>
+
+<ul>
+    <li>Blue circles are newly created.</li>
+    <li>Green circles are updated based on new data.</li>
+    <li>Removed circles are faded out.</li>
+</ul>
+
+<script>
+    (function() {
+        show();
+    })();
+</script>
+
+
+</body>
+</html>

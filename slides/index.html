@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>D3: Easy and flexible data visualisation using web standards</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/black.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<!--<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">-->
+		<link rel="stylesheet" href="darcula.css">
+
+
+		<link rel="stylesheet" href="custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section
+						 data-background="images/bg-4.png"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n\n"
+						 data-separator-notes="^Note:"
+						 data-charset="UTF-8">
+					<h2> <strong>D3</strong>: Easy and <strong>flexible</strong> data visualisation using web <strong>standards</strong></h2>
+				</section>
+
+				<section
+                         data-markdown="introduction.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n\n"
+						 data-separator-notes="^Note:"
+						 data-charset="UTF-8">
+				</section>
+
+				<section
+						data-background="images/bg-1.png"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+					<h1>Pattern 1:</h1>
+					<h2> <strong>select</strong>/<strong>add</strong>/<strong>update</strong>/<strong>remove</strong>
+
+				</section>
+
+				<section
+						data-markdown="selectpattern.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+				</section>
+
+				<section
+						data-background="images/bg-5.png"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+					<h1>Pattern 2:</h1>
+					<h1> <strong>Generators</strong> </h1>
+
+				</section>
+
+				<section
+						data-markdown="generators.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+				</section>
+
+				<section
+						data-background="images/bg-6.png"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+					<h1>Pattern 3:</h1>
+					<h1> <strong>Maps</strong> </h1>
+				</section>
+
+				<section
+						data-markdown="geo.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+				</section>
+
+				<section
+						data-background="images/bg-7.png"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+					<h1>Pattern 4:</h1>
+					<h1> <strong>Interaction</strong> </h1>
+				</section>
+
+				<section
+						data-markdown="selections.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+				</section>
+
+
+				<section
+						data-background="images/bg-8.png"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+					<h1>Pattern 5:</h1>
+					<h1> <strong>Layouts</strong> </h1>
+				</section>
+
+				<section
+						data-markdown="layouts.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+				</section>
+
+				<section
+						data-background="images/bg-9.png"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+					<h1>Extra:</h1>
+					<h1> <strong>Generative art</strong> </h1>
+				</section>
+
+				<section
+						data-markdown="artsy.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+				</section>
+			</div>
+		</div>
+
+		<div style="position: relative; text-align: center" class="reveal">
+			<p style="position: fixed; bottom: 0; width:100%; font-size: small; opacity: 0.3;">More information contact me: @josdirksen / jos.dirksen@gmail.com / www.smartjava.org / github.com/josdirksen</p>
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+                history: true,
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
