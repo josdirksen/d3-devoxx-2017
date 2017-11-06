@@ -27,7 +27,7 @@
 
 ![](images/shameless.png "I have no shame.")
 
-*I have no shame*
+*or one of the many others*
 
 
 ### What it is not
@@ -40,15 +40,18 @@
 
 ### What are we going to cover
 
-  - Main patterns:
-    - Data binding: **select** / **add** / **update** / **remove**
-    - Path generators: such as **arcs** and **path**  
-    - Working with **geo** to visualize map based data
-    - Working with layouts: **force**, **tree** and others 
-  - Mentions of some other stuff:
-    - loading data
-    - working with **Scales**
-    - Generative art
-    - transitions
-    
-  
+- Main patterns:
+  - Data binding: **select** / **add** / **update** / **remove**
+  - Path generators: such as **arcs** and **path**  
+  - Working with **geo** to visualize map based data
+  - Add **interactivity**
+  - Working with layouts: **force**, **tree** and others 
+- Mentions of some other stuff:
+  - loading data, working with **Scales**
+  - Generative art, transitions
+
+
+## Follow along
+
+- http://tiny.cc/d3devoxx
+- Or last tweet from twitter: **@josdirksen**

@@ -125,7 +125,6 @@ function appendMonth() {
         .attr("d", function(d,i) { return radialGenerator(d.months)})
         .attr("stroke", function(d,i) { return color(i)});
 
-    console.log(dataToShow[dataToShow.length-1])
     graph.select(".currentYear").text(dataToShow[dataToShow.length-1].year);
 
     year++;
@@ -186,9 +185,8 @@ color(50); // "#7b5167"
 
 ### What can we interpolate?
 
-The domain are numbers, the range can be any of this:
- 
+- Domain is numeric, the range can be any of this:
 ![](../images/what_interpolate.png) 
-
-And if this doesn't match, you can create your own.
+- Easy to create your own
+- Also be used in **transitions**
 
