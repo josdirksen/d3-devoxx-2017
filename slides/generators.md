@@ -86,6 +86,11 @@ selectAll("path").data(arcs).enter()
 [Temperature spiral](examples/spiral) <!-- .element: target="_blank" -->
 
 
+## Spiral data
+
+<img src="../images/spiral_data.png">
+
+
 ## Spiral code: Setup 1/2
 
 ```javascript
@@ -93,13 +98,12 @@ selectAll("path").data(arcs).enter()
   var maxR = height/2;
 
   // determine min and max values to determine range
-  var allMonths = months.reduce(function(result, year) {return result.concat(year.months)}, []);
-  var minValue = allMonths.reduce(function(result, monthRow) { return (monthRow.value < result) ? monthRow.value : result; }, 0);
-  var maxValue = allMonths.reduce(function(result, monthRow) { return (monthRow.value > result) ? monthRow.value : result; }, 0);
+  var minValue = years.reduce ....
+  var maxValue = years.reduce ....
 
   // set the scale for the radius
   var radius = d3.scaleLinear().range([minR, maxR]).domain([minValue, maxValue+0.3]);
-  var color = d3.scaleSequential(d3.interpolateRainbow).domain([0, months.length]);
+  var color = d3.scaleSequential(d3.interpolateRainbow).domain([0, years.length]);
 
   // configure the path generator
   var radialGenerator = d3.lineRadial();
@@ -113,10 +117,10 @@ selectAll("path").data(arcs).enter()
 ## Spiral: Render loop 2/2
 
 ```javascript
-function appendMonth() {
+function appendYear() {
 
     // select and bind the data
-    var dataToShow = months.slice(0, year);
+    var dataToShow = years.slice(0, year);
     var current = graph.selectAll("path").data(dataToShow);
 
     // We only add new data, we don't update existing data.

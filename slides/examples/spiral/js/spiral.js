@@ -65,6 +65,8 @@ function show() {
      */
     function processData(months) {
 
+        console.log(months)
+
         // and add the main path element, which will contain everything
         var minR = 20;
         var maxR = height/2;

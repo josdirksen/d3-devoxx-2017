@@ -65,12 +65,13 @@ Lets recreate this:
 - Try to work with TopoJSON, since it's much smaller
     
 ```json
-{"type":"Topology","objects":{"cb_2015_us_county_500k": {"type":
-"GeometryCollection","geometries":[{"type":"Polygon","properties":
-{"GEOID":"01005","NAME":"Barbour"},"id":"01005","arcs":[[0,1,2,3
-,4,5,6,-7,6,7,8,9,10,11,12,13,14 ...
+{"type":"Topology","objects":{"countries":{"type":"GeometryCollection",
+"geometries":[{"type":"Polygon","id":"004","arcs":[[0,1,2,3,4,5]],
+"properties":{"value":"7","countryA":"AFG","name":"Afghanistan"}},
+{"type":"MultiPolygon","id":"024","arcs":[[[6,7,8,9]],[[10,11,12]]],
+"properties":{"value":"10.2"....
 ```
-<!-- .element: style="font-size: 0.5em" -->
+<!-- .element: style="font-size: 0.4em" -->
 
 
 ### Pattern: topo data and D3.js
@@ -89,7 +90,7 @@ Lets recreate this:
  - `d3.text`, `d3.html` 
 
 ```javascript
-d3.json("somedata.csv", function(rows) {
+d3.csv("somedata.csv", function(rows) {
    // do something with the data
 });
 ```

@@ -13,8 +13,9 @@ function show() {
                                         + margin.top + ")");
 
     function update() {
+        var randomData = getRandomData()
 
-        var circles = chart.selectAll('circle').data(getRandomData(), function(d) {return d.index});
+        var circles = chart.selectAll('circle').data(randomData, function(d) {return d.index});
 
         circles.enter().append('circle')
             .attr("class", "added")
@@ -36,6 +37,16 @@ function show() {
             .on('end', function(d) {
                 this.remove()
             });
+
+        var texts = chart.selectAll('text').data(randomData, function(d) {return d.index});
+
+        texts.enter().append("text")
+            .attr("x", function(d, i) { return i * 100})
+            .text(function(d) {return d.index});
+
+        texts.transition().duration(2000).attr("x", function(d, i) { return i * 100})
+        texts.exit().remove();
+
     }
 
     // run the update function every couple of seconds
