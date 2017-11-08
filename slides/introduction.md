@@ -18,7 +18,7 @@
 
 ### Bl.ocks.org is great
 
-![](images/blocks-org.png "Blocks example")
+<img src="../images/blocks-org.png" height=400></img>
 
 
 ### Also large number of books

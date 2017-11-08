@@ -88,7 +88,7 @@ selectAll("path").data(arcs).enter()
 
 ## Spiral data
 
-<img src="../images/spiral_data.png">
+<img src="../images/spiral_data.png" height="400">
 
 
 ## Spiral code: Setup 1/2
